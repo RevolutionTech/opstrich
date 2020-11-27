@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "opstrich"
-version = "0.1.0"
+version = "0.2.0"
 description = "DevOps tooling, various scripts, etc."
 authors = ["Lucas Connors <lucas@revolutiontech.ca>"]
 license = "ISC"
