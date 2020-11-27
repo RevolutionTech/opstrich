@@ -1,5 +1,5 @@
 from invoke import Collection
 
-from opstrich.invoke import check
+from opstrich.invoke import check, package
 
-namespace = Collection(check)
+namespace = Collection(check, package)
