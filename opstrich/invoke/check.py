@@ -1,7 +1,7 @@
 from invoke import task
 
 
-def is_django_installed():
+def _is_django_installed():
     try:
         import django
     except ImportError:
@@ -53,5 +53,5 @@ def all(c):
     black(c)
 
     # It only makes sense to perform migration checks on Django projects
-    if is_django_installed():
+    if _is_django_installed():
         migrations(c)
