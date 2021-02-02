@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Upgraded poetry to 1.1.4
+- Bumped pyupgrade from 2.7.4 to 2.9.0
 
 ## [0.2.0] - 2020-11-26
 
