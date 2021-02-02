@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.3.1]
+
+### Changed
+- Fixed `check.all` invoke task to skip migration checks for projects with Django installed but without a `./manage.py` file (ie. reusable Django apps)
+
 ## [0.3.0]
 
 ### Added
