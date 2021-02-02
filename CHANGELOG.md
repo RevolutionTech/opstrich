@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.1]
+
 ### Changed
 - Upgraded poetry to 1.1.4
+- Bumped invoke from 1.4.1 to 1.5.0
+- Bumped isort from 5.6.4 to 5.7.0
 - Bumped pyupgrade from 2.7.4 to 2.9.0
 
 ## [0.2.0] - 2020-11-26
