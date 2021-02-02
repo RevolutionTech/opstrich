@@ -1,4 +1,15 @@
+import sys
+
 from invoke import task
+
+
+def _get_pyupgrade_python_version_arg():
+    python_version = sys.version_info
+    for minor_version in (8, 7):
+        if python_version >= (3, minor_version):
+            return f"--py3{minor_version}-plus"
+    else:
+        return "--py36-plus"
 
 
 def _is_django_installed():
@@ -16,7 +27,8 @@ def pyupgrade(c):
     Upgrade Python syntax using pyupgrade.
     Exits non-zero if any changes are made, so doubles as a check.
     """
-    c.run("pyupgrade --py38-plus $(find . -name '*.py')")
+    python_version_arg = _get_pyupgrade_python_version_arg()
+    c.run(f"pyupgrade {python_version_arg} $(find . -name '*.py')")
 
 
 @task

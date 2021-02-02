@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Python 3.6-3.7 support
+
 ## [0.2.1]
 
 ### Changed
