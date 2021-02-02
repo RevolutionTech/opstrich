@@ -1,3 +1,4 @@
+import os
 import sys
 
 from invoke import task
@@ -19,6 +20,10 @@ def _is_django_installed():
         return False
     else:
         return True
+
+
+def _is_django_project():
+    return _is_django_installed() and os.path.exists("./manage.py")
 
 
 @task
@@ -65,5 +70,5 @@ def all(c):
     black(c)
 
     # It only makes sense to perform migration checks on Django projects
-    if _is_django_installed():
+    if _is_django_project():
         migrations(c)
