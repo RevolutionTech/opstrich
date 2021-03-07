@@ -7,7 +7,7 @@ def encrypt(c, filename):
     Generate an encrypted version of the file using OpenSSL.
     """
     c.run(
-        f"openssl aes-256-cbc -k $DECRYPT_PASSWORD -in {filename} -out {filename}.enc"
+        f'openssl aes-256-cbc -md sha256 -k "$DECRYPT_PASSWORD" -in {filename} -out {filename}.enc'
     )
 
 
@@ -17,5 +17,5 @@ def decrypt(c, filename):
     Generate an decrypted version of the file using OpenSSL.
     """
     c.run(
-        f"openssl aes-256-cbc -k $DECRYPT_PASSWORD -in {filename}.enc -out {filename} -d"
+        f'openssl aes-256-cbc -md sha256 -k "$DECRYPT_PASSWORD" -in {filename}.enc -out {filename} -d'
     )
