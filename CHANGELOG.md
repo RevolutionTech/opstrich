@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.4.0]
+
 ### Changed
+- Explicitly use sha256 as the default digest for `openssl` invoke tasks
+  - Note: This is a backwards-incompatible change and may require re-encrypting files depending on the version of openssl being used
 - Switched CI from Travis to Github Actions
 
 ## [0.3.1]
