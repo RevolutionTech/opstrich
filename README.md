@@ -1,7 +1,7 @@
 # Opstrich
 #### DevOps tooling, various scripts, etc.
 
-[![Build Status](https://travis-ci.com/RevolutionTech/opstrich.svg?branch=main)](https://travis-ci.com/RevolutionTech/opstrich)
+![CI](https://github.com/RevolutionTech/opstrich/actions/workflows/ci.yml/badge.svg)
 
 ## Installation
 
