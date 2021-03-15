@@ -34,6 +34,6 @@ def bump(c, rule):
     pyproject_filename = _get_pyproject_filename(c)
     c.run(f"git add {pyproject_filename}")
     updated_version = _get_package_version(c)
-    c.run(f"git commit -m 'Bump version from {previous_version} to {updated_version}'")
+    c.run(f"git commit -m 'chore: bump version from {previous_version} to {updated_version}'")
     c.run(f"git tag -a '{updated_version}' -m 'version {updated_version}'")
     c.run("git push --follow-tags")

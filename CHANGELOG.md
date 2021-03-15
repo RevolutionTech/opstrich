@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- Follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages produced via `package.bump` invoke task
+
 ## [0.5.0]
 
 ### Changed
