@@ -6,8 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.5.0]
+
 ### Changed
 - Require exact versions of linting packages (eg. black, pyupgrade, isort) so that bumping Opstrich results in these packages being bumped
+- Bumped pyupgrade from 2.9.0 to 2.10.0
 
 ## [0.4.0]
 
