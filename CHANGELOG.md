@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+- Bumped pyupgrade from 2.11.0 to 2.13.0
+
 ## [0.6.0] - 2021-04-02
 
 ### Added
