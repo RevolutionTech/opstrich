@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ### Changed
-- Bumped isort from 5.8.0 to 5.9.1
-- Bumped pyupgrade from 2.11.0 to 2.20.0
+- Bumped invoke from 1.5.0 to 1.6.0
+- Bumped isort from 5.8.0 to 5.9.3
+- Bumped pyupgrade from 2.11.0 to 2.23.1
 
 ## [0.6.0] - 2021-04-02
 
