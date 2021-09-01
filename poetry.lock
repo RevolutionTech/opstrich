@@ -85,7 +85,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "pyupgrade"
-version = "2.23.1"
+version = "2.25.0"
 description = "A tool to automatically upgrade syntax for newer versions."
 category = "main"
 optional = false
@@ -137,7 +137,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6.1"
-content-hash = "f26cf86ae8289effb6dae9d0e4288ff19c00659b166df2f5c6792f7a2ba5e94e"
+content-hash = "6cd7efebac154f19ad3b3f1c96713f09557e7a458a162b23c1ca31290e3a7fa5"
 
 [metadata.files]
 appdirs = [
@@ -173,8 +173,8 @@ pathspec = [
     {file = "pathspec-0.8.1.tar.gz", hash = "sha256:86379d6b86d75816baba717e64b1a3a3469deb93bb76d613c9ce79edc5cb68fd"},
 ]
 pyupgrade = [
-    {file = "pyupgrade-2.23.1-py2.py3-none-any.whl", hash = "sha256:c5edad3d830c48b04f4f388321350fd84280c36e5fb20f4e29e0b8f935d58ba4"},
-    {file = "pyupgrade-2.23.1.tar.gz", hash = "sha256:959b9dfd0a86380d68a1164b1290ee7ec9edbcd1a246b2dbba0ac88645f8fd23"},
+    {file = "pyupgrade-2.25.0-py2.py3-none-any.whl", hash = "sha256:8409f4a166d8fbbf475e4e63912817f8ec07c402979f9399658929ebafaa6043"},
+    {file = "pyupgrade-2.25.0.tar.gz", hash = "sha256:a61084aae26ccedd6ae98fc0cc09383ce4e11b6d519653ff5e2fd131d2023723"},
 ]
 regex = [
     {file = "regex-2020.11.13-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:8b882a78c320478b12ff024e81dc7d43c1462aa4a3341c754ee65d857a521f85"},
