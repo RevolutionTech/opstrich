@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.7.0] - 2022-02-10
+
 ### Changed
 - Bumped black from 20.8b1 to 22.1.0
 - Bumped invoke from 1.5.0 to 1.6.0
