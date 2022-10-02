@@ -1,11 +1,14 @@
 FROM lambci/lambda:build-python3.8
 
+# Upgrade poetry
+RUN pipx uninstall poetry && pipx install poetry==1.2.1
+
 # Download and install SQLite from source to generate _sqlite3.so
 # Source: https://charlesleifer.com/blog/compiling-sqlite-for-use-with-python-applications/
 # Note: sqlite-33001 refers to SQLite 3.30.1
 RUN yum install -y tcl
 WORKDIR /usr/
-RUN curl https://www.sqlite.org/src/tarball/sqlite-33001.tar.gz | tar xz
+RUN curl -k https://www.sqlite.org/src/tarball/sqlite-33001.tar.gz | tar xz
 WORKDIR /usr/sqlite-33001/
 RUN ./configure && make sqlite3.c
 WORKDIR /usr/
