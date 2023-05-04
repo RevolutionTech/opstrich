@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Bumped invoke from 1.6.0 to 2.1.1
 - Bumped poetry from 1.1.4 to 1.2.1
 
+### Removed
+
+- `Dockerfile` used as parent for Zappa projects using SQLite
+
 ## [0.7.0] - 2022-02-10
 
 ### Changed
