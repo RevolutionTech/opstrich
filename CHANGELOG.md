@@ -6,13 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- `simple-static-website` Terraform module
+
 ### Changed
 - Bumped black from 22.1.0 to 22.8.0
 - Bumped invoke from 1.6.0 to 2.1.2
 - Bumped poetry from 1.1.4 to 1.2.1
 
 ### Removed
-
 - `Dockerfile` used as parent for Zappa projects using SQLite
 
 ## [0.7.0] - 2022-02-10
