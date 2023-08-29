@@ -1,5 +1,5 @@
 # Opstrich
-#### DevOps tooling, various scripts, etc.
+#### DevOps tooling, Terraform modules, various scripts, etc.
 
 ![CI](https://github.com/RevolutionTech/opstrich/actions/workflows/ci.yml/badge.svg)
 
