@@ -33,13 +33,12 @@ resource "aws_cloudfront_distribution" "static_website" {
     cache_policy_id        = "658327ea-f89d-4fab-a63d-7e88639e58f6" # CachingOptimized cache policy
   }
   ordered_cache_behavior {
-    path_pattern = "index.html"
-    allowed_methods = ["GET", "HEAD", "OPTIONS"]
-    cached_methods = ["GET", "HEAD", "OPTIONS"]
-    target_origin_id = aws_s3_bucket.static_website.id
+    path_pattern           = "index.html"
+    allowed_methods        = ["GET", "HEAD", "OPTIONS"]
+    cached_methods         = ["GET", "HEAD", "OPTIONS"]
+    target_origin_id       = aws_s3_bucket.static_website.id
     viewer_protocol_policy = "redirect-to-https"
-    default_ttl = 0
-    max_ttl = 0
+    cache_policy_id        = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad" # CachingDisabled cache policy
   }
   restrictions {
     geo_restriction {
